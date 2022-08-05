@@ -5,6 +5,11 @@ cornsilk: #FFF8DC
 purple: #663366
 Teal: #008080
 black: #00000 */
+* {
+  box-sizing: border-box;
+}
+
+/* Layout styling */
 
 
 body{background-color: #FEFEFA}
@@ -24,9 +29,7 @@ h1 {
   font-size: 2.75em;
   font-weight: 900;
   color: #008080;
-  font-kerning: normal;
-  font-display: block;
-  text-decoration: underline;
+
 }
 
 h2 {
@@ -45,21 +48,17 @@ h4 {
 
 
 header{
-  background-color: white;
-  margin-bottom: 0px;
-  width: 100%;
-  display:inline-block;
-  padding: 5px 0 5px;
-  height: 105px;
-
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 80px;
+  background-color: floralwhite;
+  margin: 1px;
+  border-bottom: 1px solid #663366;
 }
 
-#column-project {
-  column-count: 2;
-}
 
 .headerlogo {
-  width: 250px;
+  max-width: 120px;
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: -10px;
@@ -69,67 +68,73 @@ header{
 /*hero section*/
 
 #hero {
-
+  padding-top: 100px;
+  padding-bottom: 200px;
   text-align: center;
+  display: inline-block;
+  width: 100%;
 
 }
 
-.lgspacer {
-  padding-bottom: 5em;
-}
-.smspacer {
-  padding-bottom: 5em;
-}
+
 
 /*Links in header*/
-ul {
-    text-align: right;
-    list-style: none;
-    margin-top: -60px;
+
+nav > ul  {
+list-style: none;
+padding: 0;
+text-align: right;
+margin-top: -30px;
 }
 
-ul li {
-    display: inline-block;
-    padding-left: 10px;
+nav > ul > li {
+  display: inline-block;
 }
 
-ul li:last-child{
-    padding-right: 10px;
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+
 }
 
-/*links styles*/
-a. {
+
+
+a {
   color: #ff7f50;
     text-decoration: none; /* No underlining */
 }
 
-a.footer {
+.footer a {
   color: #fff276;
   text-decoration: none;
 }
 
 /*pseudo classes*/
 
-a:hover {
+nav > ul > li > a:hover {
   color: #663366;
   background-color: #FFF8DC;
   text-decoration: underline;
 }
 
-a:visited {
+nav > ul > li > a :visited {
   color: #663366;
 }
 
-a:active { /*selected/clicked*/
-  color: #663366;
-  background-color: #FFF8DC;
-}
-
-a:focus { /*input/keyboard*/
+nav > ul > li > a:focus { /*input/keyboard*/
   color: #663366;
   background-color: #FFF8DC;
   text-decoration: underline;
 }
+
+nav > ul > li > a:active { /*selected/clicked*/
+  color: #663366;
+  background-color: #FFF8DC;
+}
+
+
 
 /*buttons*/
 
@@ -138,14 +143,10 @@ a:focus { /*input/keyboard*/
   border-radius: 6px;
   color: #663366;
   padding: 10px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-weight: 400;
-  margin: 30px 10px;
-  cursor: pointer;
-  transition: 0.2s;
-  transition-duration: 0.2s;
+  padding: 15px 10px;
   border-bottom: 1px solid #663366; /* width of the border, type, color */
 }
 
@@ -170,19 +171,71 @@ a.button {
   background-color: #ff7f50;
   color: #ffffff;
 }
-/*middle of the page*/
 
+/*about page*/
 
-main{
-margin: 60px
+ #intro {
+  background-color: #161c20;
+  padding-bottom: 10px;
+  padding-top: 0px;
 
 }
 
+#intro .col-txt{
+
+
+}
+
+#intro .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+#intro .row {
+  display: flex;
+  flex-direction: row;
+
+}
+@media (min-width: 768px) {
+#intro .row{
+  width: 1920px;
+}
+
+
+
+#skillsandtools .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+#skillsandtools .row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+
+}
+@media (min-width: 768px) {
+#skillsandtools .row{
+  width: 100%;
+}
+
+
+
+
+/*middle of the page*/
 
 img {
   width: 100%;
 
 }
+
+.container {
+  padding: 0 20px;
+}
+
 
 .imgsm {
   max-width: 50%;
@@ -196,21 +249,101 @@ img {
 }
 
 
-.row {
+#projects .row {
   display: flex;
+  flex-direction: column;
+  border: 5px solid #ffdd00;
   margin-bottom: 50px;
 }
 
+#projects .col-txt {
+  padding: 3em 2em;
+}
 
-#imgclm {
-  column-count: 2;
+
 
 }
 
-#overview {
-  column-count: 5;
+
+
+footer {
+  background-color: #161c20;
+  border-color: #161c20;
+height: auto;
+color: lightgrey;
 }
 
+
+/* for txt overlay later
+.img-block {
+  background-image: url(../img/travel-buddy/cover-small.png);
+  background-size: cover;
+  min-height:400px;
+}
+.img-block:hover .txt {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-grow: 1;
+
+}
+
+.img-block:hover .txt p {
+  font-size: 3em;
+  color: #ffffff;
+}
+*/
+
+@media (min-width: 768px) {
+  #projects .row {
+    width: 45%;
+  }
+
+  #projects .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+@media (min-width: 150px) {
+  #profileimg{
+width: 40%
+
+  }
+
+
+
+
+}
+#casestudy .wrapper .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 10em;
+    padding-bottom: 5em;
+
+  }
+
+.row {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+@media (min-width: 1080px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
+  @media (min-width: 1080px) {
+    .container2 {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+}
 
 footer {
   background-color: #161c20;
