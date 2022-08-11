@@ -27,7 +27,7 @@
 
   <!--for the header-->
   <header>
-    <div class="container">
+    <div class="container2">
       <a href="index.html"><img src="img/logo.svg" alt="logo" class="headerlogo"></a>
 
       <!-- For the navigation -->
@@ -51,10 +51,15 @@
         <div class="wrapper">
 
           <div class="row">
-<!-- open row that holds (2) columns for project -->
+            <!-- open row that holds (2) col-md-6s for project -->
 
-
-            <div class="col-txt">
+            <div class="col-md-6">
+              <picture>
+                <source srcset="img/profile.jpg" media="(max-width:100px)">
+                <img src="img/profile.jpg" alt="My Image" id="profileimg">
+              </picture>
+            </div>
+            <div class="col-md-6" style="color: lightgrey" style="width: 50%">
               <div>
                 <h2>Get to know the gal behind the designs! ✌🏾</h2>
                 <h3>I'm a journalist turned UX designer</h3>
@@ -68,14 +73,9 @@
                 <p> 🍜 If I could eat one type of food for the rest of my life, it would be noodles, in all it's shapes and sizes: Pho, ramen, udon, vermincelli, somen, flat noodles, you name it! If i can slurp it, i'm there !! </p>
 
               </div>
-              </div>
-
-            <div class="col-img">
-              <picture>
-                <source srcset="img/profile.jpg" media="(max-width:100px)">
-                <img src="img/profile.jpg" alt="My Image" id="profileimg">
-              </picture>
             </div>
+
+
 
           </div>
         </div>
@@ -91,8 +91,8 @@
 
 
 
-      <!-- open first column (2 paragraphs) -->
-      <div class="column">
+      <!-- open first col-md-6 (2 paragraphs) -->
+      <div class="col-md-6">
         <p>I'm a Black-British designer based in London, the city of double-decker buses,
           red phone booths, royal guards and black cabbies. I have a background in journalism,
           which opened me up to explore the possibilities of digital design, storytelling
@@ -106,9 +106,9 @@
           Japanese proverb, led me to take into careful consideration my strengths, what
           I can contribute to the world, my passions and my competencies. </p>
 
-      </div> <!-- end first column -->
-      <!-- open second column (paragraphs) -->
-      <div class="column">
+      </div> <!-- end first col-md-6 -->
+      <!-- open second col-md-6 (paragraphs) -->
+      <div class="col-md-6">
         <p>Once I gathered all of these components I was left with a clearer idea of the
           type of career I wanted: A career which is both mentally stimulating and challenging,
           allows me to dissect and pick people's brain's, allows room for collobrative
@@ -123,61 +123,61 @@
           through user-centered research and design I can help people navigate their relationship
           with technology and the thought of that excites me!
         </p>
-      </div> <!-- end second column -->
-      <!-- end row that holds (2) columns  -->
+      </div> <!-- end second col-md-6 -->
+      <!-- end row that holds (2) col-md-6s  -->
 
-    <div class="row" id="skills">
-      <div>
-        <h2>Skills & Tools</h2>
+      <div class="row" id="skills">
+        <div>
+          <h2>Skills & Tools</h2>
+        </div>
+        <div class="wrapper" id="skillsandtools">
+
+          <div class="row">
+
+            <div class="col-md-6" style="width: 1750px">
+
+              <h3>My key skills include:</h3>
+
+              <ul id="skills">
+                <p>
+                  <li>User Research (Competitor Analysis, User Interviews, User Psychology, Data Analysis)</li>
+                  <li>User Personas & User Flows</li>
+                  <li>Low-High Fidelity Wireframes & Prototyping</li>
+                  <li>Usability Testing</li>
+                  <li>UI Design (Style Guides & Design Patterns)</li>
+                  <li>Adobe XD, Figma, Sketch, HTML</li>
+                </p>
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+              <h3>Tool box</h3>
+              <picture>
+                <source src="img/Portfolio/10-mytoolbox.png" type="image/">
+                <img src="img/Portfolio/10-mytoolbox.png" class="tools">
+              </picture>
+            </div>
+          </div>
+
+
+
+        </div>
+
       </div>
-      <div class="wrapper" id="skillsandtools">
 
-<div class="row">
+      <div class="row">
+        <h2>WHEN I'M NOT INDULGING IN ALL THINGS DESIGN + FUN FACTS</h2>
+        <p>My Myer-Briggs personality type: ENFP-A
+        </p>
 
-  <div class="column">
+        <p>Outside of work you can find me travelling, i'm trying to reach 30 counties by 30! (14/30). </p>
 
-    <h3>My key skills include:</h3>
-
-    <ul id="skills">
-      <p>
-        <li>User Research (Competitor Analysis, User Interviews, User Psychology, Data Analysis)</li>
-        <li>User Personas & User Flows</li>
-        <li>Low-High Fidelity Wireframes & Prototyping</li>
-        <li>Usability Testing</li>
-        <li>UI Design (Style Guides & Design Patterns)</li>
-        <li>Adobe XD, Figma, Sketch, HTML</li>
-      </p>
-    </ul>
-  </div>
-
-  <div class="column">
-    <h3>Tool box</h3>
-    <picture>
-      <source src="img/Portfolio/10-mytoolbox.png" type="image/">
-      <img src="img/Portfolio/10-mytoolbox.png" class="tools">
-    </picture>
-  </div>
-</div>
-
-
+        <p>My perfect day looks like having nothing on my schduele, meeting up with friends, and eating delicous food.</p>
+        <p></p>
+        <a href="files/Naomi Alao - UX:UI Design CV.pdf" target="_blank" class="button">View My Résumé</a>
 
       </div>
-
     </div>
-
-    <div class="row">
-      <h2>WHEN I'M NOT INDULGING IN ALL THINGS DESIGN + FUN FACTS</h2>
-      <p>My Myer-Briggs personality type: ENFP-A
-      </p>
-
-      <p>Outside of work you can find me travelling, i'm trying to reach 30 counties by 30! (14/30). </p>
-
-      <p>My perfect day looks like having nothing on my schduele, meeting up with friends, and eating delicous food.</p>
-<p></p>
-      <a href="files/Naomi Alao - UX:UI Design CV.pdf" target="_blank" class="button">View My Résumé</a>
-
-    </div>
-  </div>
 
     </div>
     </div>
