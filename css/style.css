@@ -76,15 +76,17 @@ header {
 }
 
 /*Links in header*/
+
+.icon {
+  color: #008080;
+}
 nav>ul {
   list-style: none;
   padding: 0;
   margin: 10px 0 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
+
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -123,9 +125,25 @@ nav>ul>li>a:active {
   background-color: #FFF8DC;
 }
 
+.navtoggle li:not(:last-child) {
+display: none;
+}
 .container {
   padding: 0 80px;
 }
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
 
 header .container { /*specfically targets a class within a element i.e only the container element in the header section*/
   padding: 0 10px;
@@ -381,7 +399,7 @@ Medium devices (640px and larger)
   }
 
 .headerlogo{
-
+max-width: 150px;
   float:left;
 }
   nav {
@@ -395,6 +413,18 @@ Medium devices (640px and larger)
     padding: 0;
     margin: 16px 0 0;
   }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 
   .container {
     padding: 40px;
