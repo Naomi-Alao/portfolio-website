@@ -55,7 +55,7 @@ header {
   padding-bottom: 10px;
   background-color: White;
   border-bottom: 1px solid #161c20;
-  text-align: center;
+  text-align: unset;
 }
 
 .headerlogo {
@@ -89,9 +89,6 @@ header {
 }
 /*Links in header*/
 
-.icon {
-  color: #008080;
-}
 nav>ul {
   list-style: none;
   padding: 0;
@@ -155,7 +152,32 @@ display: none;
   font-size: 20px;
   padding-right: 0;
 }
+.navtoggle.responsive nav {
+padding: 24px 0 0;
+}
 
+.navtoggle.responsive li {
+display: block;
+padding: 10px 0;
+border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child {
+padding: 0 0 10px;
+}
+.navtoggle.responsive nav {
+padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+display: block;
+padding: 10px 0;
+border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child {
+padding: 0 0 10px;
+}
 
 header .container { /*specfically targets a class within a element i.e only the container element in the header section*/
   padding: 0 10px;
