@@ -214,21 +214,21 @@ footer .container {
 
 /*buttons*/
 .button {
-  background-color: #FFF8DC;
+  background-color: #161c20;
   border-radius: 6px;
-  color: #663366;
+  color: #FFFFFF;
   padding: 10px;
   text-decoration: none;
   display: inline-block;
   font-weight: 400;
   padding: 15px 10px;
-  border-bottom: 1px solid #663366;
+  border-bottom: 1.5px solid #fff276;
   /* width of the border, type, color */
   transition: 0.2 opacity;
 }
 
 a.button {
-  color: #663366;
+  color: #FFFFFF;
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 400;
@@ -312,7 +312,7 @@ width: 35%;
 
 .row-flex {
   display: flex;
-  overflow-x: scroll;
+  justify-content: space-evenly;
 }
 
 #roles {
