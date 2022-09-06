@@ -514,7 +514,17 @@ width: 35%;
   padding-bottom: 2em;
 }
 
+/* ==============================
+Small devices (640px and larger)
+================================= */
+@media only screen and (max-width: 640px) {
 
+  #my-story .row-flex{
+    flex-direction: column-reverse;
+  }
+  #my-story .column{
+    width: 100%
+  }
 
 /* ==============================
 Medium devices (640px and larger)
@@ -563,7 +573,6 @@ max-width: 150px;
     padding: 10px;
     display: block;
   }
-
 
 #skillsandtools .row {
   max-width: 100%;
