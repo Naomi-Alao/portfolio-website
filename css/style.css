@@ -250,6 +250,16 @@ a.button {
   color: #ffffff;
 }
 
+.sub-heading{
+    background-color: #161c20;
+    border-radius: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    width: max-content;
+
+
+}
 /*about page*/
 #intro {
   background-color: #161c20;
@@ -312,8 +322,21 @@ width: 35%;
 
 .row-flex {
   display: flex;
+<<<<<<< Updated upstream
   overflow-x: scroll;
+=======
+  justify-content: space-between;
+
+>>>>>>> Stashed changes
 }
+
+#overview .wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 #roles {
   padding-right: 20px
