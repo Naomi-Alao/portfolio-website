@@ -192,7 +192,7 @@ footer .container {
 */
 
 #my-story .container {
-  padding: 20px;
+  padding: 0, 60px;
 }
 
 #intro .container {
@@ -255,8 +255,7 @@ a.button {
     border-radius: 60px;
     text-align: center;
     color: #FFFFFF;
-    display: block;
-    width: max-content;
+    width: 30%;
 
 
 }
@@ -459,6 +458,12 @@ width: 35%;
 
 }
 
+.heading h1{
+  padding-top: 50px;
+  margin-top: 80px;
+  color: #7E57C2;
+}
+
 .img-container{
   display: block;
   margin-left: auto;
@@ -475,6 +480,18 @@ width: 35%;
   margin-right: auto;
   margin-top: 50px;
   max-width: 60%;
+  text-align: center;
+  border-radius: 10px;
+
+
+}
+
+.img-mid{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 80%;
   text-align: center;
   border-radius: 10px;
 
@@ -538,7 +555,7 @@ max-width: 150px;
 }
 
   .container {
-    padding: 40px;
+    padding: 80px;
   }
 
   [class*="col-"] {
