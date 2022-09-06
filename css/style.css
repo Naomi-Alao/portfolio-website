@@ -296,10 +296,17 @@ a.button {
 
 #skillsandtools .row {
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+justify-content:space-between;
+ margin: 0 auto;
 }
 
+#freepik_stories-discovery{
+  background-color: #161c20;
+  border-radius: 250px;
+  margin-top: 100px;
+  width: 80%;
+  margin-left: 15%
+}
 /*middle of the page*/
 img {
   width: 100%;
@@ -322,12 +329,17 @@ width: 35%;
 
 .row-flex {
   display: flex;
-<<<<<<< HEAD
-  justify-content: space-evenly;
-=======
   justify-content: space-between;
-  width: 100%
->>>>>>> main
+}
+
+.column-48{
+  width: 48%;
+}
+
+.column-text-704{
+  min-width: 704px;
+  max-width: 704px;
+  width: 704px;
 }
 
 #overview .wrapper{
@@ -337,10 +349,8 @@ width: 35%;
   justify-content: space-between;
 }
 
-
-#roles {
-  padding-right: 20px;
-width: 100%;
+#roles .column {
+  width: 19%;
 
 }
 
@@ -457,6 +467,29 @@ width: 100%;
   max-width: 50%;
   text-align: center;
   border-radius: 10px;
+}
+
+.img-small{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 60%;
+  text-align: center;
+  border-radius: 10px;
+
+
+}
+
+.img-big{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 10px;
+
+
 }
 
 .row {
