@@ -517,13 +517,17 @@ width: 35%;
 /* ==============================
 Small devices (640px and larger)
 ================================= */
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 200px) {
 
   #my-story .row-flex{
     flex-direction: column-reverse;
   }
-  #my-story .column{
+  #my-story .column-48{
     width: 100%
+  }
+
+  .container {
+    padding: 20px;
   }
 
 /* ==============================
@@ -572,6 +576,10 @@ max-width: 150px;
     w
     padding: 10px;
     display: block;
+  }
+
+  #my-story .row-flex{
+    flex-direction: row;
   }
 
 #skillsandtools .row {
