@@ -138,7 +138,7 @@ nav>ul>li>a:active {
 display: none;
 }
 .container {
-  padding: 0 20px;
+  padding: 0 80px;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -255,7 +255,7 @@ a.button {
     border-radius: 60px;
     text-align: center;
     color: #FFFFFF;
-    width: 50%;
+    width: 30%;
 
 
 }
@@ -306,10 +306,6 @@ justify-content:space-between;
   width: 80%;
   margin-left: 15%
 }
-
-#my-story .row-flex{
-  flex-direction: column-reverse;
-}
 /*middle of the page*/
 img {
   width: 100%;
@@ -334,15 +330,16 @@ width: 35%;
   display: flex;
   justify-content: space-between;
 }
-.row-flex .about{
-  width: 80%
-  margin:auto;
-}
 
 .column-48{
   width: 48%;
 }
 
+.column-text-704{
+  min-width: 704px;
+  max-width: 704px;
+  width: 704px;
+}
 
 #overview .wrapper{
   display: flex;
@@ -356,55 +353,10 @@ width: 35%;
 
 }
 
-#roles ul{
-  margin: -30px;
-margin-top: 5px;
-}
 #projects .col-txt {
   padding: 3em 2em;
 }
 
-.about{
-  flex-direction: column;
-  width: 210%
-}
-
-.competitor-analysis{
-  flex-direction: column;
-  width:210%;
-}
-
-.wireframes{
-  flex-direction: column;
-  width: 100%;
-}
-
-.stack {
-  width: 100%;
-}
-
-.column-text-704{
-width: 100%;
-}
-/* for txt overlay later
-.img-block {
-  background-image: url(../img/travel-buddy/cover-small.png);
-  background-size: cover;
-  min-height:400px;
-}
-.img-block:hover .txt {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-grow: 1;
-
-}
-
-.img-block:hover .txt p {
-  font-size: 3em;
-  color: #ffffff;
-}
-*/
 /*animiations*/
 @keyframes color-change {
   0% {
@@ -476,7 +428,6 @@ width: 100%;
   padding-bottom: 5em;
 }
 
-/* Case studies*/
 
 #global-citizen-hero .column:first-child{
   width:40%
@@ -487,13 +438,9 @@ width: 100%;
 
 }
 
-
-
-
-
 .heading h1{
-  padding-top: 10px;
-  margin-top: 10px;
+  padding-top: 50px;
+  margin-top: 80px;
   color: #7E57C2;
 }
 
@@ -548,6 +495,7 @@ width: 100%;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 /* ==============================
@@ -561,10 +509,21 @@ Small devices (640px and larger)
   #my-story .column-48{
     width: 100%
   }
->>>>>>> 3b1150d632625a3d1194cc579b102406402a7dee
 
   .container {
     padding: 20px;
+  }
+=======
+/* ==============================
+Small devices (640px and larger)
+================================= */
+@media only screen and (max-width: 640px) {
+
+  #my-story .row-flex{
+    flex-direction: column-reverse;
+  }
+  #my-story .column{
+    width: 100%
   }
 
 /* ==============================
@@ -605,8 +564,12 @@ max-width: 150px;
   display: none;
 }
 
+  .container {
+    padding: 80px;
+  }
 
   [class*="col-"] {
+    w
     padding: 10px;
     display: block;
   }
@@ -640,40 +603,6 @@ max-width: 150px;
 #intro .container {
   padding: 50px;
 }
-
-#my-story .row-flex{
-  flex-direction: row;
-}
-
-#my-story .column{
-  width: 100%
-}
-.container{
-  padding: 40px;
-}
-
-.about{
-  flex-direction: row;
-  width:100%;
-}
-.competitor-analysis{
-  flex-direction: row;
-  width:100%;
-}
-
-
-
-.column-text-704{
-  min-width: 704px;
-  max-width: 704px;
-  width: 704px;
-}
-.heading h1{
-  padding-top: 50px;
-  margin-top: 80px;
-  color: #7E57C2;
-}
-
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
