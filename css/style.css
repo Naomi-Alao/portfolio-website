@@ -386,23 +386,7 @@ margin-top: 5px;
 .column-text-704{
 width: 100%;
 }
-/* for txt overlay later
-.img-block {
-  background-image: url(../img/travel-buddy/cover-small.png);
-  background-size: cover;
-  min-height:400px;
-}
-.img-block:hover .txt {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-grow: 1;
-}
-.img-block:hover .txt p {
-  font-size: 3em;
-  color: #ffffff;
-}
-*/
+
 /*animiations*/
 @keyframes color-change {
   0% {
