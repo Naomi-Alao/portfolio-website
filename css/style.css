@@ -547,7 +547,25 @@ width: 100%;
   padding-bottom: 2em;
 }
 
+<<<<<<< HEAD
 
+=======
+/* ==============================
+Small devices (640px and larger)
+================================= */
+@media only screen and (min-width: 200px) {
+
+  #my-story .row-flex{
+    flex-direction: column-reverse;
+  }
+  #my-story .column-48{
+    width: 100%
+  }
+>>>>>>> 3b1150d632625a3d1194cc579b102406402a7dee
+
+  .container {
+    padding: 20px;
+  }
 
 /* ==============================
 Medium devices (640px and larger)
@@ -591,6 +609,10 @@ max-width: 150px;
   [class*="col-"] {
     padding: 10px;
     display: block;
+  }
+
+  #my-story .row-flex{
+    flex-direction: row;
   }
 
 #skillsandtools .row {
