@@ -632,6 +632,12 @@ max-width: 150px;
   width:100%;
 }
 
+.wireframes{
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+}
+
 .column-text-704{
   min-width: 704px;
   max-width: 704px;
