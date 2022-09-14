@@ -137,8 +137,12 @@ nav>ul>li>a:active {
 .navtoggle li:not(:last-child) {
 display: none;
 }
-.container {
+.container .container-hero {
   padding: 0 20px;
+}
+
+.container-hero {
+  padding: 0 75px;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -343,6 +347,13 @@ width: 35%;
   width: 48%;
 }
 
+.column-32{
+  width: 32%;
+}
+
+.column-64{
+  width: 64%;
+}
 
 #overview .wrapper{
   display: flex;
@@ -609,7 +620,7 @@ max-width: 150px;
   width: 100%
 }
 .container{
-  padding: 40px;
+  padding: 20px 100px;
 }
 
 .about{
