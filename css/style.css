@@ -137,8 +137,9 @@ nav>ul>li>a:active {
 .navtoggle li:not(:last-child) {
 display: none;
 }
-.container {
-  padding: 0 20px;
+
+.container-hero {
+  padding: 0 75px;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -185,32 +186,6 @@ header .container { /*specfically targets a class within a element i.e only the 
 footer .container {
   padding: 0 10px;
 }
-/*
-#intro .container {
-  padding: 20px;
-}
-*/
-
-#my-story .container {
-  padding: 0, 60px;
-}
-
-#intro .container {
-  padding: 20px;
-}
-
-#skills .container {
-  padding: 20px;
-}
-
-#interests .container{
-  padding: 20px;
-}
-
-#intro h2{
-  margin-top: -10px;
-}
-
 
 /*buttons*/
 .button {
@@ -260,6 +235,29 @@ a.button {
 
 }
 /*about page*/
+
+
+#my-story .container {
+  padding: 0, 60px;
+}
+
+#intro .container {
+  padding: 20px;
+}
+
+#skills .container {
+  padding: 20px;
+}
+
+#interests .container{
+  padding: 20px;
+}
+
+#intro h2{
+  margin-top: -10px;
+}
+
+
 #intro {
   background-color: #161c20;
   padding-bottom: 10px;
@@ -316,14 +314,13 @@ img {
 
 }
 
-
 .imgsm {
   max-width: 50%;
 }
 
 /*portfolio page*/
 #casestudy .container {
-  padding: 20px;
+  padding: 20px 100px;
 }
 .tags {
 width: 35%;
@@ -343,23 +340,34 @@ width: 35%;
   width: 48%;
 }
 
-
-#overview .wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
+.column-32{
+  width: 32%;
 }
 
-#roles .column {
-  width: 19%;
-
+.column-64{
+  width: 64%;
 }
 
+.column-19.2{
+  width: 19.2%;
+}
+
+.column-margin{
+  margin: auto 0px;
+
+}
+.section{
+  margin: 100px 0px;
+}
+
+.row-margin{
+  margin: auto;
+}
 #roles ul{
   margin: -30px;
 margin-top: 5px;
 }
+
 #projects .col-txt {
   padding: 3em 2em;
 }
@@ -386,23 +394,7 @@ margin-top: 5px;
 .column-text-704{
 width: 100%;
 }
-/* for txt overlay later
-.img-block {
-  background-image: url(../img/travel-buddy/cover-small.png);
-  background-size: cover;
-  min-height:400px;
-}
-.img-block:hover .txt {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-grow: 1;
-}
-.img-block:hover .txt p {
-  font-size: 3em;
-  color: #ffffff;
-}
-*/
+
 /*animiations*/
 @keyframes color-change {
   0% {
@@ -625,9 +617,24 @@ max-width: 150px;
   width: 100%
 }
 .container{
-  padding: 40px;
+  padding: 20px 100px;
 }
 
+.container2 .column-right h2{
+  float: right;
+  margin-right: 20px;
+}
+
+.container2 .column-48 h2{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.container2{
+  padding: 20px 20px;
+}
 .about{
   flex-direction: row;
   width:100%;
