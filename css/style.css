@@ -139,7 +139,7 @@ display: none;
 }
 
 .container-hero {
-  padding: 0 75px;
+  padding: 0 15px;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -236,6 +236,9 @@ a.button {
 }
 /*about page*/
 
+.container {
+  padding:10px;
+}
 
 #my-story .container {
   padding: 0, 60px;
@@ -327,17 +330,24 @@ width: 35%;
   padding : 5px 0;
 }
 
+.section-design-process .row-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 .row-flex {
   display: flex;
   justify-content: space-between;
 }
+
 .row-flex .about{
   width: 80%
   margin:auto;
 }
 
 .column-48{
-  width: 48%;
+  width: 90%;
+  margin: auto;
 }
 
 .column-32{
@@ -357,7 +367,7 @@ width: 35%;
 
 }
 .section{
-  margin: 100px 0px;
+padding: 10px 0px;
 }
 
 .row-margin{
@@ -616,6 +626,11 @@ max-width: 150px;
 #my-story .column{
   width: 100%
 }
+
+.section{
+padding: 100px 0px;
+}
+
 .container{
   padding: 20px 100px;
 }
@@ -631,6 +646,9 @@ max-width: 150px;
 
 }
 
+.container-hero {
+  padding: 0 75px;
+}
 
 .container2{
   padding: 20px 20px;
@@ -650,11 +668,28 @@ max-width: 150px;
   margin: auto;
 }
 
+.row-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-design-process .row-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .column-text-704{
   min-width: 704px;
   max-width: 704px;
   width: 704px;
 }
+
+
+.column-48{
+  width: 48%;
+}
+
 .heading h1{
   padding-top: 50px;
   margin-top: 80px;
