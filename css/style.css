@@ -139,7 +139,7 @@ display: none;
 }
 
 .container-hero {
-  padding: 0 75px;
+  padding: 0 15px;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -218,12 +218,34 @@ a.button {
   color: #ff7f50;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
+  float: right;
 }
 
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
 }
+
+.anchor {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  float: right;
+  display: inline-block;
+  margin: -50px 18px 18px 18px;
+    }
+
+    .anchor .img-top {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+    }
+
+    .anchor:hover .img-top {
+        display: inline;
+    }
 
 .sub-heading{
     background-color: #161c20;
@@ -236,6 +258,9 @@ a.button {
 }
 /*about page*/
 
+.container {
+  padding:10px;
+}
 
 #my-story .container {
   padding: 0, 60px;
@@ -295,6 +320,7 @@ a.button {
   display: flex;
 justify-content:space-between;
  margin: 0 auto;
+ flex-direction: column;
 }
 
 #freepik_stories-discovery{
@@ -327,22 +353,53 @@ width: 35%;
   padding : 5px 0;
 }
 
+.section-design-process .row-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 .row-flex {
   display: flex;
   justify-content: space-between;
 }
+
+.column-flex{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .row-flex .about{
   width: 80%
   margin:auto;
+}
+
+
+
+.column-24{
+  width: 24%;
+}
+
+.column-32{
+  width: 32%;
 }
 
 .column-48{
   width: 48%;
 }
 
-.column-32{
-  width: 32%;
+.column-48-stack{
+  width: 90%;
+  margin: auto;
 }
+
+.section-dp .row-flex {
+  width: 90%;
+  margin:auto;
+  flex-direction: column;
+}
+
+
 
 .column-64{
   width: 64%;
@@ -357,7 +414,7 @@ width: 35%;
 
 }
 .section{
-  margin: 100px 0px;
+padding: 10px 0px;
 }
 
 .row-margin{
@@ -549,6 +606,15 @@ Medium devices (640px and larger)
     padding-bottom: 50px;
   }
 
+  .anchor {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    float: right;
+    display: inline-block;
+    margin: 18px 18px 18px 18px;
+      }
+
 .headerlogo{
 max-width: 150px;
   float:left;
@@ -585,6 +651,10 @@ max-width: 150px;
 
 #skillsandtools .row {
   max-width: 100%;
+ display: flex;
+  justify-content:space-between;
+   margin: 0 auto;
+   flex-direction: row;
 }
 
 #projects .row {
@@ -616,6 +686,11 @@ max-width: 150px;
 #my-story .column{
   width: 100%
 }
+
+.section{
+padding: 100px 0px;
+}
+
 .container{
   padding: 20px 100px;
 }
@@ -631,6 +706,9 @@ max-width: 150px;
 
 }
 
+.container-hero {
+  padding: 0 75px;
+}
 
 .container2{
   padding: 20px 20px;
@@ -650,11 +728,34 @@ max-width: 150px;
   margin: auto;
 }
 
+.row-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-design-process .row-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .column-text-704{
   min-width: 704px;
   max-width: 704px;
   width: 704px;
 }
+
+.column-48-stack{
+  width: 48%;
+  margin:auto;
+}
+
+.section-dp .row-flex {
+  width: 90%;
+  margin:auto;
+  flex-direction: row;
+}
+
 .heading h1{
   padding-top: 50px;
   margin-top: 80px;
