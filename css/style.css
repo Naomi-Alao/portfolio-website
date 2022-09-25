@@ -218,7 +218,6 @@ a.button {
   color: #ff7f50;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
-  float: right;
 }
 
 .button.contact:hover {
