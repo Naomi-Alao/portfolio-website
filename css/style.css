@@ -357,6 +357,13 @@ width: 35%;
   justify-content: space-between;
   flex-direction: column;
 }
+.row-flex-margin {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+
 .row-flex {
   display: flex;
   justify-content: space-between;
@@ -375,7 +382,19 @@ width: 35%;
   margin:auto;
 }
 
+.section-introduction .row-flex{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 
+}
+
+.section-finaldesigns .row-flex{
+  display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: auto;
+}
 
 .column-24{
   width: 24%;
@@ -392,6 +411,11 @@ width: 35%;
 
 .column-48-stack{
   width: 90%;
+  margin: auto;
+}
+
+.column-50-stack{
+  width: 50%;
   margin: auto;
 }
 
@@ -415,6 +439,11 @@ width: 35%;
   margin: auto 0px;
 
 }
+.column-margin-middle{
+  margin: auto;
+width: 90%;
+}
+
 .section{
 padding: 10px 0px;
 }
@@ -735,6 +764,12 @@ padding: 100px 0px;
   justify-content: space-between;
 }
 
+.section-java .row-flex{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .section-design-process .row-flex {
   display: flex;
   justify-content: space-between;
@@ -760,6 +795,13 @@ padding: 100px 0px;
 .section-dp .row-flex {
   width: 90%;
   margin:auto;
+  flex-direction: row;
+
+}
+
+.section-introduction .row-flex{
+  display: flex;
+  justify-content: space-between;
   flex-direction: row;
 
 }
